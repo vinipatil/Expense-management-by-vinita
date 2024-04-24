@@ -1,38 +1,114 @@
-.App {
+body {
+  background: linear-gradient(to right, #0577be, #ad5af6);
+  /* background-color: #0577be; */
+}
+
+.container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.left-container,
+.right-container {
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 20px;
+  background-color: #fff;
+}
+
+.left-container {
+  width: 40%;
+  margin-left: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+.right-container {
+  width: 40%;
+  margin-right: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); 
+}
+
+.left-container h1 {
+  margin-bottom: 20px;
+}
+
+.left-container input[type="text"],
+.left-container input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.left-container button {
+  padding: 10px 20px;
+  /* background: #c20482; */
+  background: #6f06b5;
+
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-container button:hover {
+  background-color: #0056b3;
+}
+
+.left-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-container li {
+  margin-bottom: 10px;
+}
+
+li span {
+  margin-right: 50px; 
+}
+
+h2, h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #000;
+  font-size: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.expense-item {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px; 
 }
 
-.App-link {
-  color: #61dafb;
+.expense-item button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  background: #6f06b5;
+  /* background: #c20482; */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expense-item button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  text-align: center;
 }
