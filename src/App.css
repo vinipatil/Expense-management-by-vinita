@@ -1,6 +1,6 @@
-body {
-  background: linear-gradient(to right, #0577be, #ad5af6);
-  /* background-color: #0577be; */
+body{
+  background: linear-gradient(to right, #6e7cf6,rgb(208, 61, 210), #f23450);
+  font-family:'Times New Roman', Times, serif;
 }
 
 .container {
@@ -8,6 +8,8 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .left-container,
@@ -18,8 +20,10 @@ body {
   background-color: #fff;
 }
 
+
 .left-container {
   width: 40%;
+  height: 459px;
   margin-left: 50px;
   padding: 20px;
   border-radius: 5px;
@@ -28,17 +32,16 @@ body {
 }
 
 .right-container {
-  width: 40%;
+  width: 45%;
+  height: auto;
   margin-right: 50px;
   padding: 20px;
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); 
+  overflow: auto;
 }
 
-.left-container h1 {
-  margin-bottom: 20px;
-}
 
 .left-container input[type="text"],
 .left-container input[type="number"] {
@@ -51,9 +54,7 @@ body {
 
 .left-container button {
   padding: 10px 20px;
-  /* background: #c20482; */
   background: #6f06b5;
-
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -69,31 +70,23 @@ body {
   padding: 0;
 }
 
-.left-container li {
-  margin-bottom: 10px;
-}
 
-li span {
-  margin-right: 50px; 
-}
-
-h2, h1 {
+h2 {
+  font-size: 27px;
+  margin-top: 40px;
   text-align: center;
+  font-weight: 700;
 }
 
 h1 {
   color: #000;
   font-size: 35px;
+  text-align: center;
+  position: relative; 
+  z-index: 2; 
 }
 
-.expense-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px; 
-}
-
-.expense-item button {
+.btn {
   padding: 10px 20px;
   color: #fff;
   border: none;
@@ -101,14 +94,55 @@ h1 {
   cursor: pointer;
   margin-left: 10px;
   background: #6f06b5;
-  /* background: #c20482; */
-
 }
 
-.expense-item button:hover {
+.btn:hover {
   background-color: #0056b3;
 }
 
 h3 {
   text-align: center;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+select option {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #0056b3;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+h4{
+  font-weight: 600;
+  text-align: center;
+}
+
+h5{
+  font-size: 22px;
+  font-weight: 500;
 }
