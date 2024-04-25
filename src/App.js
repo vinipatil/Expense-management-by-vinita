@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import backgroundVideo from "./bg.mp4";
 
 function App() {
   const [expenses, setExpenses] = useState([]);
